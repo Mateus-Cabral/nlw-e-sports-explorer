@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/bg.jpg);
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #121214;
+}
+
+body * {
+  line-height: 160%;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2em;
+  margin-top: 2em;
+  height: calc(120px+32);
+}
+
+header div {
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  padding: 4px;
+  transition: transform 0.3s;
+  animation: fromTop 0.5s backwards;
+  animation-delay: 0.7s;
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+
+header img {
+  border-radius: 50%;
+  width: 7.5em;
+  height: 7.5em;
+}
+
+main {
+  max-width: 36.25em;
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  display: grid;
+  gap: 1.2rem;
+}
+
+section {
+  color: white;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  border-radius: 8px;
+  padding-top: 0.25em;
+}
+
+section div {
+  background-color: #2a2634;
+  border-radius: 8px;
+  padding: 1.5em 2em 2em;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1.2em;
+}
+
+section ul li {
+  transition: transform 0.3s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.game-list img {
+  width: 90px;
+  border-radius: 8px;
+}
+
+.streamer-list img {
+  width: 70px;
+  border-radius: 50px;
+}
+
+main section:nth-child(1) {
+  animation: toTop 0.3s backwards;
+}
+
+main section:nth-child(2) {
+  animation: toTop 0.5s backwards;
+}
+
+main section:nth-child(3) {
+  animation: toTop 0.7s backwards;
+}
+
+/* animation */
+@keyframes fromTop {
+  from {
+    transform: translateY(-1.875em);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toTop {
+  from {
+    transform: translateY(1.875em);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
