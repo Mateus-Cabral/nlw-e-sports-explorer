@@ -2,6 +2,8 @@
 
 > Trilha Explorer
 
+![preview](./.github/preview.png)
+
 Projeto construído no evento Next Level Week da RocketSeat
 
 [🔗 Clique aqui para acessar](https://mateus-cabral.github.io/nlw-e-sports-explorer/)
